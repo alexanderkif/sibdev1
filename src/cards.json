@@ -1,0 +1,88 @@
+{
+  "cards": [
+    {
+      "title": "Пробка на Мира",
+      "subtitle": "Вечер для двоих",
+      "promo": "-50%",
+      "text": "Скидка",
+      "img": "glass"
+    },
+    {
+      "title": "Кино и немцы",
+      "subtitle": "Бесплатный бокал пива",
+      "promo": "ВАРВАР",
+      "text": "Промокод",
+      "img": "bottle"
+    },
+    {
+      "title": "Valery cakes",
+      "subtitle": "Торт",
+      "promo": "30%",
+      "text": "Скидка",
+      "img": "cake"
+    },
+    {
+      "title": "Sushi sell",
+      "subtitle": "Набор \"Праздник\"",
+      "promo": "45%",
+      "text": "Скидка",
+      "img": "sushi"
+    },
+    {
+      "title": "Mangosteen",
+      "subtitle": "Фрукт в подарок",
+      "promo": "J130",
+      "text": "Купон",
+      "img": "fruit"
+    },
+    {
+      "title": "Теленок табака",
+      "subtitle": "Стейк \"Мачете\"",
+      "promo": "20%",
+      "text": "Скидка",
+      "img": "meat"
+    },
+    {
+      "title": "Fire food",
+      "subtitle": "Вторая шаурма в подарок",
+      "promo": "ОГОНЬ",
+      "text": "Промокод",
+      "img": "roll"
+    },
+    {
+      "title": "Aroma cremeria",
+      "subtitle": "Джелато \"Пармезан\"",
+      "promo": "20%",
+      "text": "Скидка",
+      "img": "ice"
+    },
+    {
+      "title": "Пробка на Мира",
+      "subtitle": "Вечер для двоих",
+      "promo": "-50%",
+      "text": "Скидка",
+      "img": "glass"
+    },
+    {
+      "title": "Кино и немцы",
+      "subtitle": "Бесплатный бокал пива",
+      "promo": "ВАРВАР",
+      "text": "Промокод",
+      "img": "bottle"
+    },
+    {
+      "title": "Valery cakes",
+      "subtitle": "Торт",
+      "promo": "30%",
+      "text": "Скидка",
+      "img": "cake"
+    },
+    {
+      "title": "Sushi sell",
+      "subtitle": "Набор \"Праздник\"",
+      "promo": "45%",
+      "text": "Скидка",
+      "img": "sushi"
+    }
+  ]
+}
