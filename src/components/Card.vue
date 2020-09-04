@@ -1,7 +1,5 @@
 <template>
   <div class="card" @mouseover="hoverCard" @mouseleave="leaveCard">
-    <div ref="left" class="card__poligon card__poligon_left"></div>
-    <div ref="right" class="card__poligon card__poligon_right"></div>
     <img :src="require(`@/assets/${card.img}.svg`)" class="card__img" />
     <div class="card__top">
       <div class="card__title">{{ card.title }}</div>
@@ -57,9 +55,16 @@ export default {
 
   &:hover {
     border: 1px solid #DF212D;
+    &:before,
+    &:after {
+      border-top: 1px solid #DF212D;
+      border-left: 1px solid #DF212D;
+    }
   }
 
-  &__poligon {
+  &:before,
+  &:after {
+    content: '';
     position: absolute;
     width: 12px;
     height: 12px;
@@ -67,21 +72,14 @@ export default {
     background: #FAFAFA;
     border-radius: 1px;
     box-shadow: inset 4px 4px 6px -3px rgba(50, 50, 50, 0.15);
-
-    &_hover {
-      border-top: 1px solid #DF212D;
-      border-left: 1px solid #DF212D;
-    }
-
-    &_left {
-      left: -7px;
-      transform: rotate(135deg);
-    }
-
-    &_right {
-      right: -7px;
-      transform: rotate(-45deg);
-    }
+  }
+  &:before {
+    left: -7px;
+    transform: rotate(135deg);
+  }
+  &:after {
+    right: -7px;
+    transform: rotate(-45deg);
   }
 
   &__img {
