@@ -1,5 +1,5 @@
 <template>
-  <div class="card" @mouseover="hoverCard" @mouseleave="leaveCard">
+  <div class="card">
     <img :src="require(`@/assets/${card.img}.svg`)" class="card__img" />
     <div class="card__top">
       <div class="card__title">{{ card.title }}</div>
@@ -17,16 +17,6 @@ export default {
   name: 'Card',
   props: {
     card: Object
-  },
-  methods: {
-    hoverCard() {
-      this.$refs.left.classList.add('card__poligon_hover')
-      this.$refs.right.classList.add('card__poligon_hover')
-    },
-    leaveCard() {
-      this.$refs.left.classList.remove('card__poligon_hover')
-      this.$refs.right.classList.remove('card__poligon_hover')
-    }
   }
 }
 </script>
