@@ -96,7 +96,7 @@ html, body {
 
     &_opened {
       position: fixed;
-      top: -8px;
+      // top: -8px;
       width: 246px;
       transition: width 0.5s ease-in-out;
     
