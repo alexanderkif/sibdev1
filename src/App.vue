@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app" :class="openDrawer ? 'app_drawer-opened' : ''" >
+  <div id="app" class="app" >
     <Drawer class="app__drawer"
       :class="openDrawer ? 'app__drawer_opened' : ''"
       :navs="$options.navs"
@@ -63,7 +63,6 @@ html, body {
 
 .app {
   display: grid;
-  width: 100%;
   min-height: 100%;
   grid-template-rows: 200px auto;
   grid-template-columns: 240px 1fr;
@@ -79,27 +78,27 @@ html, body {
     grid-template-columns: 12px 1fr;
   }
 
-  &_drawer-opened {
-    @media (max-width: 1024px) {
-      grid-template-columns: 104px 1fr;
-      grid-template-areas: 
-          ". h"
-          ". p";
-    }
-
-    @media (max-width: 450px) {
-      grid-template-columns: 12px 1fr;
-    }
-  }
-
   &__drawer {
     grid-area: d;
     background-color: #F3F4F9;
+    position: relative;
+    width: 240px;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+      width: 104px;
+      transition: width 0.5s ease-in-out;
+    }
+
+    @media (max-width: 450px) {
+      width: 12px;
+    }
 
     &_opened {
       position: fixed;
+      top: -8px;
       width: 246px;
-      height: 100%;
+      transition: width 0.5s ease-in-out;
     
       @media (max-width: 450px) {
         width: 192px;

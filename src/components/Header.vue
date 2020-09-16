@@ -35,6 +35,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  cursor: default;
 
   @media (max-width: 1024px) {
     padding: 20px 20px;

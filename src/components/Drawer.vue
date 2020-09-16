@@ -1,7 +1,6 @@
 <template>
   <div class="drawer">
     <img class="drawer__btn"
-      :class="openDrawer ? 'drawer__btn_opened' : ''"
       @click="$emit('click-menu-btn')"
       :src="openDrawer
       ? require('@/assets/menu-close.svg')
@@ -46,20 +45,12 @@ export default {
 
     @media (max-width: 1024px) {
       display: block;
-      left: 104px;
+      right: -48px;
     }
+  }
 
-    @media (max-width: 450px) {
-      left: 12px;
-    }
-
-    &_opened {
-      left: 246px;
-    
-      @media (max-width: 450px) {
-        left: 192px;
-      }
-    }
+  &__links {
+    overflow: hidden;
   }
 }
 </style>

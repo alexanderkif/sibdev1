@@ -24,6 +24,7 @@ export default {
   display: flex;
   align-items: center;
   padding: 40px;
+  height: 28px;
 
   &__svg {
     @media (max-width: 1024px) {

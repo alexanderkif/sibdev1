@@ -33,6 +33,7 @@ export default {
     padding-left: 40px;
     display: flex;
     align-items: center;
+    transition: display 0.5s ease-in-out 0.5s;
     
     &_off {
       @media (max-width: 450px) {
@@ -57,9 +58,11 @@ export default {
 
     @media (max-width: 1024px) {
       display: none;
+      transition: display 0.5s ease-in-out 0.5s;
     
       &_opened {
         display: block;
+        transition: display 0.5s ease-in-out 0.5s;
       }
     }
   }

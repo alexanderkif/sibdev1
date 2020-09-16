@@ -32,6 +32,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 
   @media (max-width: 1024px) {
     width: 296px;
