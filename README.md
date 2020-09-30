@@ -1,5 +1,9 @@
 # sibdev1
 
+### Link to Figma
+
+https://tinyurl.com/yxlsnjcy
+
 ## Project setup
 ```
 npm install
