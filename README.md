@@ -1,5 +1,11 @@
 # sibdev1
 
+SibDev test task
+
+### Deploy
+
+https://alexanderkif.github.io/sibdev1/
+
 ### Link to Figma
 
 https://tinyurl.com/yxlsnjcy
